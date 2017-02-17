@@ -34,14 +34,18 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+    if(segue.identifier == "register"){
         let destView = segue.destinationViewController as! RegisterViewController
         
-        destView.infoUserBlock = {(userNameText: String,passwordText: String) in
+        destView.infoUserBlock = { (userNameText: String,passwordText: String) in
             self.userNameTextField.text = userNameText
             self.passwordTextField.text = passwordText
+        }
+    }else{
+        if(segue.identifier == "weather"){
             
         }
-        
+        }
 }
 
 }

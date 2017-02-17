@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
 class WeatherViewController: UIViewController {
 
+    var city = "Ha Noi"
     override func viewDidLoad() {
         super.viewDidLoad()
+        getJson("http://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=ad424b078a472e3905a9a3ee086d9871")
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +24,33 @@ class WeatherViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func getJson(path: String){
+        let url = NSURL(string: path)
+        
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: url!)
+        
+        let session = NSURLSession.sharedSession()
+        
+        let task = session.dataTaskWithRequest(urlRequest){
+            (data,response, error) -> Void in
+            
+            let httpResponse = response as! NSHTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            if (statusCode == 200) {
+                
+                do {
+                    let json  = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+                
+                    print(json)
+                    
+                }catch{
+                    print("Error")
+                }
+                
+            }
+        }
+        task.resume()
+    }
     /*
     // MARK: - Navigation
 
