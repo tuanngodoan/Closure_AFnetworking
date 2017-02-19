@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Yt-14-m9p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Yt-14-m9p">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -76,6 +84,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="riF-89-AaI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3/4" id="9Xr-zP-00B"/>
                             <constraint firstItem="riF-89-AaI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DPl-sx-oGe"/>
@@ -105,14 +114,41 @@
                     <view key="view" contentMode="scaleToFill" id="vWD-Zp-GeO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjk-Uq-n1p">
+                                <rect key="frame" x="299" y="81" width="70" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYi-xv-C4K">
+                                <rect key="frame" x="15" y="81" width="281" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6UB-bM-rdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EYi-xv-C4K" firstAttribute="width" secondItem="vWD-Zp-GeO" secondAttribute="width" multiplier="3/4" id="4kU-HX-9pd"/>
+                            <constraint firstItem="jjk-Uq-n1p" firstAttribute="top" secondItem="EYi-xv-C4K" secondAttribute="top" id="CEL-xo-KgH"/>
+                            <constraint firstItem="jjk-Uq-n1p" firstAttribute="leading" secondItem="EYi-xv-C4K" secondAttribute="trailing" constant="3" id="Uu8-zr-lkt"/>
+                            <constraint firstItem="EYi-xv-C4K" firstAttribute="top" secondItem="BZq-QG-wAa" secondAttribute="bottom" constant="17" id="YFj-yv-eMD"/>
+                            <constraint firstItem="jjk-Uq-n1p" firstAttribute="height" secondItem="EYi-xv-C4K" secondAttribute="height" id="fa1-Nc-V5Q"/>
+                            <constraint firstItem="EYi-xv-C4K" firstAttribute="leading" secondItem="vWD-Zp-GeO" secondAttribute="leading" constant="15" id="grL-Gz-Ggx"/>
+                            <constraint firstItem="jjk-Uq-n1p" firstAttribute="width" secondItem="EYi-xv-C4K" secondAttribute="width" multiplier="1/4" id="tZ3-WV-9Le"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Weather" id="sKn-Js-v9E"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQx-2L-tdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298.5" y="1124.5"/>
+            <point key="canvasLocation" x="120.5" y="1122.5"/>
         </scene>
         <!--REGISTER-->
         <scene sceneID="z6F-ye-C9x">
@@ -169,7 +205,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Ks-RO-yOE" firstAttribute="centerY" secondItem="l57-7O-9pA" secondAttribute="centerY" id="2Hq-cJ-822"/>
                             <constraint firstItem="9Ks-RO-yOE" firstAttribute="centerX" secondItem="l57-7O-9pA" secondAttribute="centerX" id="Kbt-UJ-Zv0"/>
@@ -185,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMS-Kb-y8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791.5" y="353.5"/>
+            <point key="canvasLocation" x="729.5" y="353.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gml-jw-hrb">
