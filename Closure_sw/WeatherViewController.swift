@@ -14,6 +14,7 @@ class WeatherViewController: UIViewController {
     var city = "Ha Noi"
     override func viewDidLoad() {
         super.viewDidLoad()
+        //data = city.dataUsing
         getJson("http://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=ad424b078a472e3905a9a3ee086d9871")
 
         // Do any additional setup after loading the view.
