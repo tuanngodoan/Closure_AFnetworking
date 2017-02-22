@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import AFNetworking
 
 class WeatherViewController: UIViewController {
     
@@ -25,6 +26,8 @@ class WeatherViewController: UIViewController {
     
     @IBOutlet weak var degTextField: UITextField!
     
+    
+    
     var weatherJson:NSDictionary!
     var tempEntity = temperature()
     var  weatherEntity = weatherDesc()
@@ -35,9 +38,12 @@ class WeatherViewController: UIViewController {
         super.viewDidLoad()
         
        
-        
-        getJson(urlPath: "http://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=ad424b078a472e3905a9a3ee086d9871")
-        //updateWeather()
+
+        //getJson(urlPath: "http://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=ad424b078a472e3905a9a3ee086d9871")
+        let cityName = " Hai Duong"
+        let urlRequest = "http://api.openweathermap.org/data/2.5/weather?"
+        let parameters = ["q":cityName,"appid":"ad424b078a472e3905a9a3ee086d9871"]
+        requestCity(urlRequest, parameter: parameters)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,11 +53,33 @@ class WeatherViewController: UIViewController {
     
     @IBAction func searchWeatherButton(sender: AnyObject) {
         
-        
-        
+        let cityName = String(cityNameTextField.text)
+        let urlRequest = "http://api.openweathermap.org/data/2.5/weather?"
+        let parameters = ["q":cityName,"appid":"ad424b078a472e3905a9a3ee086d9871"]
+        requestCity(urlRequest, parameter: parameters)
+ 
     }
     
+    
+    func requestCity(urlRequest: String, parameter par: NSDictionary){
+        
+        let manager = AFHTTPSessionManager()
+        
+        manager.GET(urlRequest, parameters: par, success: { (sessionDataTask, responObject: AnyObject?) in
 
+            //print(responObject!.description)
+            
+            if let dic = responObject as? NSDictionary{
+                self.parseJsonTempEntity(weatherJson: dic)
+            }
+            
+        }) { (sessionDataTask, error) in
+            //
+            //
+            //
+        }
+        
+    }
 
     func updateWeather(){
         weatherTextField.text = weatherEntity.descriptionWeather
@@ -98,16 +126,6 @@ class WeatherViewController: UIViewController {
     func parseJsonTempEntity(weatherJson json: NSDictionary){
         
        if let main = json["main"] as? [String:AnyObject]{
-//            
-//            guard   let temp = main["temp"] as? Double,
-//                    let temp_min = main["temp_min"] as? Double,
-//                    let temp_max = main["temp_max"] as? Double
-//                else{return}
-//            
-//            templeEntity.temp = temp
-//            templeEntity.temp_min = temp_min
-//            templeEntity.temp_max = temp_max
-//
             if let temp = main["temp"] as? Double {
                 tempEntity.temp = temp
                 print("temp = \(temp)")
