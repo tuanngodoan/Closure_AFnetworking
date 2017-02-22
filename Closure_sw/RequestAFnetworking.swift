@@ -12,7 +12,7 @@ import AFNetworking
 class RequestAPI {
     
     var cityName:String
-    var jsonDictionary = NSDictionary()
+    
     
     init(cityName:String){
         self.cityName = cityName
@@ -26,8 +26,6 @@ class RequestAPI {
         
         let baseUrl = "http://api.openweathermap.org/data/2.5/weather?"
         manager.GET(baseUrl, parameters: parameters, success: { (sessionDataTask, responObject: AnyObject?) in
-            
-            self.jsonDictionary = responObject as! NSDictionary
             
         })
         { (sessionDataTask, error) in

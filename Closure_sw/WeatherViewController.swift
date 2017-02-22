@@ -13,22 +13,6 @@ import AFNetworking
 class WeatherViewController: UIViewController {
     
     @IBOutlet weak var cityNameTextField: UITextField!
-
-    @IBOutlet weak var weatherTextField: UITextField!
-
-    @IBOutlet weak var tempTextField: UITextField!
-    
-    @IBOutlet weak var tempMaxTextField: UITextField!
-    
-    @IBOutlet weak var tempMinTextField: UITextField!
-    
-    @IBOutlet weak var speedTextField: UITextField!
-    
-    @IBOutlet weak var degTextField: UITextField!
-    
-    
-    
-    var  getCityWeather:
     
     //var city = "Ha Noi"
     override func viewDidLoad() {
@@ -43,8 +27,8 @@ class WeatherViewController: UIViewController {
     }
     
     @IBAction func searchWeatherButton(sender: AnyObject) {
-        requestWeather = RequestAPI(cityName: String(cityNameTextField.text))
-        requestWeather.loadJson()
+        
+        
     }
     
     /*
