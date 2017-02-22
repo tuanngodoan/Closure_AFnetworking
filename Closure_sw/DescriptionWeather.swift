@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class descriptionWeather{
+    
+    var description:String!
+    var main:String!
+    
+    init(description:String, main: String){
+        self.description = description
+        self.main = main
+    }
+}

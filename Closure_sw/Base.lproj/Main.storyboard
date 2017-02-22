@@ -133,80 +133,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-DU-ol2">
-                                <rect key="frame" x="109" y="156" width="229" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQd-sj-D4N">
-                                <rect key="frame" x="109" y="221" width="229" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-7R-dTQ">
-                                <rect key="frame" x="109" y="286" width="229" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zeh-Pk-xqo">
-                                <rect key="frame" x="109" y="351" width="229" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOI-7I-5RM">
-                                <rect key="frame" x="109" y="417" width="229" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="StY-k3-cxh">
-                                <rect key="frame" x="109" y="482" width="229" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="StY-k3-cxh" firstAttribute="trailing" secondItem="sOI-7I-5RM" secondAttribute="trailing" id="0dp-TO-rvr"/>
-                            <constraint firstItem="VQd-sj-D4N" firstAttribute="width" secondItem="TXI-DU-ol2" secondAttribute="width" id="2bN-L3-Jxl"/>
-                            <constraint firstItem="StY-k3-cxh" firstAttribute="width" secondItem="sOI-7I-5RM" secondAttribute="width" id="3RQ-Zr-KoU"/>
                             <constraint firstItem="EYi-xv-C4K" firstAttribute="width" secondItem="vWD-Zp-GeO" secondAttribute="width" multiplier="3/4" id="4kU-HX-9pd"/>
-                            <constraint firstItem="sOI-7I-5RM" firstAttribute="width" secondItem="Zeh-Pk-xqo" secondAttribute="width" id="5pg-cb-1XG"/>
-                            <constraint firstItem="sOI-7I-5RM" firstAttribute="top" secondItem="Zeh-Pk-xqo" secondAttribute="bottom" constant="26" id="8Tb-Za-zgu"/>
                             <constraint firstItem="jjk-Uq-n1p" firstAttribute="top" secondItem="EYi-xv-C4K" secondAttribute="top" id="CEL-xo-KgH"/>
-                            <constraint firstItem="Zeh-Pk-xqo" firstAttribute="width" secondItem="wvm-7R-dTQ" secondAttribute="width" id="Go3-qX-dZT"/>
-                            <constraint firstItem="StY-k3-cxh" firstAttribute="top" secondItem="sOI-7I-5RM" secondAttribute="bottom" constant="25" id="H9W-xR-zbd"/>
-                            <constraint firstItem="Zeh-Pk-xqo" firstAttribute="height" secondItem="wvm-7R-dTQ" secondAttribute="height" id="MBM-g0-7Gt"/>
-                            <constraint firstItem="StY-k3-cxh" firstAttribute="height" secondItem="sOI-7I-5RM" secondAttribute="height" id="PWM-nq-eaO"/>
-                            <constraint firstItem="wvm-7R-dTQ" firstAttribute="height" secondItem="VQd-sj-D4N" secondAttribute="height" id="UI4-dv-p5y"/>
                             <constraint firstItem="jjk-Uq-n1p" firstAttribute="leading" secondItem="EYi-xv-C4K" secondAttribute="trailing" constant="3" id="Uu8-zr-lkt"/>
-                            <constraint firstItem="wvm-7R-dTQ" firstAttribute="trailing" secondItem="VQd-sj-D4N" secondAttribute="trailing" id="V1t-Uj-7rQ"/>
                             <constraint firstItem="EYi-xv-C4K" firstAttribute="top" secondItem="BZq-QG-wAa" secondAttribute="bottom" constant="17" id="YFj-yv-eMD"/>
-                            <constraint firstItem="Zeh-Pk-xqo" firstAttribute="top" secondItem="wvm-7R-dTQ" secondAttribute="bottom" constant="25" id="asv-9X-rcF"/>
                             <constraint firstItem="jjk-Uq-n1p" firstAttribute="height" secondItem="EYi-xv-C4K" secondAttribute="height" id="fa1-Nc-V5Q"/>
                             <constraint firstItem="EYi-xv-C4K" firstAttribute="leading" secondItem="vWD-Zp-GeO" secondAttribute="leading" constant="15" id="grL-Gz-Ggx"/>
-                            <constraint firstItem="wvm-7R-dTQ" firstAttribute="top" secondItem="VQd-sj-D4N" secondAttribute="bottom" constant="25" id="iim-gl-ZTu"/>
-                            <constraint firstItem="VQd-sj-D4N" firstAttribute="trailing" secondItem="TXI-DU-ol2" secondAttribute="trailing" id="kOA-sJ-AUI"/>
-                            <constraint firstItem="TXI-DU-ol2" firstAttribute="trailing" secondItem="EYi-xv-C4K" secondAttribute="trailing" constant="42" id="kSk-L4-z2V"/>
-                            <constraint firstItem="VQd-sj-D4N" firstAttribute="height" secondItem="TXI-DU-ol2" secondAttribute="height" id="ms2-CE-CwZ"/>
-                            <constraint firstItem="sOI-7I-5RM" firstAttribute="height" secondItem="Zeh-Pk-xqo" secondAttribute="height" id="nVG-Hh-PKi"/>
-                            <constraint firstItem="TXI-DU-ol2" firstAttribute="width" secondItem="EYi-xv-C4K" secondAttribute="width" multiplier="2/3" constant="41.666666666666686" id="nlW-kN-Ha5"/>
-                            <constraint firstItem="sOI-7I-5RM" firstAttribute="trailing" secondItem="Zeh-Pk-xqo" secondAttribute="trailing" id="pXy-Tx-5Oi"/>
-                            <constraint firstItem="Zeh-Pk-xqo" firstAttribute="trailing" secondItem="wvm-7R-dTQ" secondAttribute="trailing" id="qst-cT-ZQW"/>
-                            <constraint firstItem="TXI-DU-ol2" firstAttribute="height" secondItem="EYi-xv-C4K" secondAttribute="height" id="sXl-jd-fsk"/>
                             <constraint firstItem="jjk-Uq-n1p" firstAttribute="width" secondItem="EYi-xv-C4K" secondAttribute="width" multiplier="1/4" id="tZ3-WV-9Le"/>
-                            <constraint firstItem="wvm-7R-dTQ" firstAttribute="width" secondItem="VQd-sj-D4N" secondAttribute="width" id="vQ8-se-HxJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Weather" id="sKn-Js-v9E"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="cityNameTextField" destination="EYi-xv-C4K" id="jl2-2u-2aC"/>
-                        <outlet property="degTextField" destination="StY-k3-cxh" id="XRB-7a-sYe"/>
-                        <outlet property="speedTextField" destination="sOI-7I-5RM" id="XP7-FJ-v7W"/>
-                        <outlet property="tempMaxTextField" destination="wvm-7R-dTQ" id="WTW-RE-z4i"/>
-                        <outlet property="tempMinTextField" destination="Zeh-Pk-xqo" id="oGm-ph-TS1"/>
-                        <outlet property="tempTextField" destination="VQd-sj-D4N" id="uHO-Nm-IfV"/>
-                        <outlet property="weatherTextField" destination="TXI-DU-ol2" id="1Xr-4X-1lo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQx-2L-tdo" userLabel="First Responder" sceneMemberID="firstResponder"/>

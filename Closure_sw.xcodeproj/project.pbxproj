@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041E8D911E5D701900779454 /* RequestAFnetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D901E5D701900779454 /* RequestAFnetworking.swift */; };
+		041E8D911E5D701900779454 /* RequestAPIWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D901E5D701900779454 /* RequestAPIWeather.swift */; };
 		041E8D951E5D792100779454 /* Closure_sw-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D941E5D792100779454 /* Closure_sw-Bridging-Header.h */; };
 		045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0DC1E56DA640080A372 /* AppDelegate.swift */; };
 		045CE0DF1E56DA640080A372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0DE1E56DA640080A372 /* LoginViewController.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041E8D901E5D701900779454 /* RequestAFnetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAFnetworking.swift; sourceTree = "<group>"; };
+		041E8D901E5D701900779454 /* RequestAPIWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPIWeather.swift; sourceTree = "<group>"; };
 		041E8D921E5D74CC00779454 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../Library/Developer/Xcode/DerivedData/Closure_sw-gqwftxjwvjgdsfbmptafdqyzvonl/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		041E8D941E5D792100779454 /* Closure_sw-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Closure_sw-Bridging-Header.h"; sourceTree = "<group>"; };
 		045CE0D91E56DA640080A372 /* Closure_sw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Closure_sw.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +89,8 @@
 				045CE0DE1E56DA640080A372 /* LoginViewController.swift */,
 				045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */,
 				04CF28061E56E89200798FFD /* WeatherViewController.swift */,
-				041E8D901E5D701900779454 /* RequestAFnetworking.swift */,
 				04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */,
+				041E8D901E5D701900779454 /* RequestAPIWeather.swift */,
 				04DCA5E51E5DB45900AFB66C /* WeatherEntity */,
 				041E8D961E5D79DC00779454 /* Application */,
 				04DCA5E01E5DB2E200AFB66C /* Source */,
@@ -264,7 +264,7 @@
 				04CF28071E56E89200798FFD /* WeatherViewController.swift in Sources */,
 				04DCA5E21E5DB35900AFB66C /* CityWeatherInfo.swift in Sources */,
 				04DCA5E71E5DB4FC00AFB66C /* DescriptionWeather.swift in Sources */,
-				041E8D911E5D701900779454 /* RequestAFnetworking.swift in Sources */,
+				041E8D911E5D701900779454 /* RequestAPIWeather.swift in Sources */,
 				045CE0EF1E56DCDF0080A372 /* RegisterViewController.swift in Sources */,
 				041E8D951E5D792100779454 /* Closure_sw-Bridging-Header.h in Sources */,
 				045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */,
