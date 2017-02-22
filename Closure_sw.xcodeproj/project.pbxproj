@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E8D911E5D701900779454 /* RequestAFnetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D901E5D701900779454 /* RequestAFnetworking.swift */; };
 		045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0DC1E56DA640080A372 /* AppDelegate.swift */; };
 		045CE0DF1E56DA640080A372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0DE1E56DA640080A372 /* LoginViewController.swift */; };
 		045CE0E21E56DA640080A372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045CE0E01E56DA640080A372 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041E8D901E5D701900779454 /* RequestAFnetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAFnetworking.swift; sourceTree = "<group>"; };
 		045CE0D91E56DA640080A372 /* Closure_sw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Closure_sw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045CE0DC1E56DA640080A372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045CE0DE1E56DA640080A372 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */,
 				04CF28061E56E89200798FFD /* WeatherViewController.swift */,
 				DC6D67F21E5C79330070220B /* EntityWeather */,
+				041E8D901E5D701900779454 /* RequestAFnetworking.swift */,
 				045CE0E01E56DA640080A372 /* Main.storyboard */,
 				045CE0E31E56DA640080A372 /* Assets.xcassets */,
 				045CE0E51E56DA640080A372 /* LaunchScreen.storyboard */,
@@ -237,6 +240,7 @@
 				DC6D67F41E5C79490070220B /* temperature.swift in Sources */,
 				DC6D67F61E5C795D0070220B /* weatherDesc.swift in Sources */,
 				04CF28071E56E89200798FFD /* WeatherViewController.swift in Sources */,
+				041E8D911E5D701900779454 /* RequestAFnetworking.swift in Sources */,
 				045CE0EF1E56DCDF0080A372 /* RegisterViewController.swift in Sources */,
 				DC6D67F81E5C79640070220B /* wind.swift in Sources */,
 				045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */,
