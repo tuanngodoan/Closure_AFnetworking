@@ -16,10 +16,10 @@
 		045CE0E71E56DA640080A372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045CE0E51E56DA640080A372 /* LaunchScreen.storyboard */; };
 		045CE0EF1E56DCDF0080A372 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */; };
 		04CF28071E56E89200798FFD /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF28061E56E89200798FFD /* WeatherViewController.swift */; };
+		04DCA5E21E5DB35900AFB66C /* CityWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */; };
+		04DCA5E41E5DB45600AFB66C /* TempCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E31E5DB45600AFB66C /* TempCity.swift */; };
+		04DCA5E71E5DB4FC00AFB66C /* DescriptionWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E61E5DB4FC00AFB66C /* DescriptionWeather.swift */; };
 		1D182C566951ACDB874CE245 /* Pods_Closure_sw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6F5FA623E68E1F481402B0 /* Pods_Closure_sw.framework */; };
-		DC6D67F41E5C79490070220B /* temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6D67F31E5C79490070220B /* temperature.swift */; };
-		DC6D67F61E5C795D0070220B /* weatherDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6D67F51E5C795D0070220B /* weatherDesc.swift */; };
-		DC6D67F81E5C79640070220B /* wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6D67F71E5C79640070220B /* wind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,16 +30,16 @@
 		045CE0DC1E56DA640080A372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045CE0DE1E56DA640080A372 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		045CE0E11E56DA640080A372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		045CE0E31E56DA640080A372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045CE0E31E56DA640080A372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Closure_sw/Assets.xcassets; sourceTree = "<group>"; };
 		045CE0E61E56DA640080A372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		045CE0E81E56DA640080A372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045CE0E81E56DA640080A372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Closure_sw/Info.plist; sourceTree = "<group>"; };
 		045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		04CF28061E56E89200798FFD /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWeatherInfo.swift; sourceTree = "<group>"; };
+		04DCA5E31E5DB45600AFB66C /* TempCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempCity.swift; sourceTree = "<group>"; };
+		04DCA5E61E5DB4FC00AFB66C /* DescriptionWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionWeather.swift; sourceTree = "<group>"; };
 		0CE48087A385C17F1D9FE4A4 /* Pods-Closure_sw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Closure_sw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Closure_sw/Pods-Closure_sw.debug.xcconfig"; sourceTree = "<group>"; };
 		35923D5235D584EFA662F0DC /* Pods-Closure_sw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Closure_sw.release.xcconfig"; path = "Pods/Target Support Files/Pods-Closure_sw/Pods-Closure_sw.release.xcconfig"; sourceTree = "<group>"; };
-		DC6D67F31E5C79490070220B /* temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = temperature.swift; sourceTree = "<group>"; };
-		DC6D67F51E5C795D0070220B /* weatherDesc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherDesc.swift; sourceTree = "<group>"; };
-		DC6D67F71E5C79640070220B /* wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wind.swift; sourceTree = "<group>"; };
 		DE6F5FA623E68E1F481402B0 /* Pods_Closure_sw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Closure_sw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,15 +89,34 @@
 				045CE0DE1E56DA640080A372 /* LoginViewController.swift */,
 				045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */,
 				04CF28061E56E89200798FFD /* WeatherViewController.swift */,
-				DC6D67F21E5C79330070220B /* EntityWeather */,
 				041E8D901E5D701900779454 /* RequestAFnetworking.swift */,
+				04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */,
+				04DCA5E51E5DB45900AFB66C /* WeatherEntity */,
 				041E8D961E5D79DC00779454 /* Application */,
-				045CE0E01E56DA640080A372 /* Main.storyboard */,
+				04DCA5E01E5DB2E200AFB66C /* Source */,
+			);
+			path = Closure_sw;
+			sourceTree = "<group>";
+		};
+		04DCA5E01E5DB2E200AFB66C /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				045CE0E31E56DA640080A372 /* Assets.xcassets */,
+				045CE0E01E56DA640080A372 /* Main.storyboard */,
 				045CE0E51E56DA640080A372 /* LaunchScreen.storyboard */,
 				045CE0E81E56DA640080A372 /* Info.plist */,
 			);
-			path = Closure_sw;
+			name = Source;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		04DCA5E51E5DB45900AFB66C /* WeatherEntity */ = {
+			isa = PBXGroup;
+			children = (
+				04DCA5E31E5DB45600AFB66C /* TempCity.swift */,
+				04DCA5E61E5DB4FC00AFB66C /* DescriptionWeather.swift */,
+			);
+			name = WeatherEntity;
 			sourceTree = "<group>";
 		};
 		45300595B943334F0BF1931A /* Pods */ = {
@@ -116,16 +135,6 @@
 				DE6F5FA623E68E1F481402B0 /* Pods_Closure_sw.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC6D67F21E5C79330070220B /* EntityWeather */ = {
-			isa = PBXGroup;
-			children = (
-				DC6D67F31E5C79490070220B /* temperature.swift */,
-				DC6D67F51E5C795D0070220B /* weatherDesc.swift */,
-				DC6D67F71E5C79640070220B /* wind.swift */,
-			);
-			name = EntityWeather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,13 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DCA5E41E5DB45600AFB66C /* TempCity.swift in Sources */,
 				045CE0DF1E56DA640080A372 /* LoginViewController.swift in Sources */,
-				DC6D67F41E5C79490070220B /* temperature.swift in Sources */,
-				DC6D67F61E5C795D0070220B /* weatherDesc.swift in Sources */,
 				04CF28071E56E89200798FFD /* WeatherViewController.swift in Sources */,
+				04DCA5E21E5DB35900AFB66C /* CityWeatherInfo.swift in Sources */,
+				04DCA5E71E5DB4FC00AFB66C /* DescriptionWeather.swift in Sources */,
 				041E8D911E5D701900779454 /* RequestAFnetworking.swift in Sources */,
 				045CE0EF1E56DCDF0080A372 /* RegisterViewController.swift in Sources */,
-				DC6D67F81E5C79640070220B /* wind.swift in Sources */,
 				041E8D951E5D792100779454 /* Closure_sw-Bridging-Header.h in Sources */,
 				045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */,
 			);
@@ -271,6 +280,7 @@
 				045CE0E11E56DA640080A372 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Closure_sw;
 			sourceTree = "<group>";
 		};
 		045CE0E51E56DA640080A372 /* LaunchScreen.storyboard */ = {
@@ -279,6 +289,7 @@
 				045CE0E61E56DA640080A372 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Closure_sw;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
