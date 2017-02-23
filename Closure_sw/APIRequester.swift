@@ -9,13 +9,14 @@
 import Foundation
 import AFNetworking
 
-class RequestAPIWeather {
+class RequesterAPI {
     
     var cityName:String
     var jsonBlock: ((json: NSDictionary) -> Void)?
     
     init(cityName:String){
         self.cityName = cityName
+        loadJson()
     }
 
     
@@ -27,7 +28,7 @@ class RequestAPIWeather {
         
         manager.GET(baseUrl, parameters: parameters, success: { (sessionTaskData, responObject) in
             
-                //
+            //
             let json = responObject as! NSDictionary
             
             // json Block
@@ -35,16 +36,16 @@ class RequestAPIWeather {
            
         }) { (sessionTaskData, error) in
                 //
-                
         }
     }
     // parse entity from JsonWeather
-    func parseJson(keyID key: String, WeatherJson dictionary : NSDictionary) -> AnyObject{
-        
-        if let idKey = dictionary[key]! as AnyObject!{
-            return idKey
-        }
-    }
+//    func parseJson(keyID key: String, WeatherJson dictionary : NSDictionary) -> AnyObject{
+//        
+//        if let idKey = dictionary[key]! as AnyObject!{
+//            return idKey
+//        }
+//    }
+    
 }
 
 

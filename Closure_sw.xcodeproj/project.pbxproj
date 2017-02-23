@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041E8D911E5D701900779454 /* RequestAPIWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D901E5D701900779454 /* RequestAPIWeather.swift */; };
+		0409CB1D1E5EEC7900D84ADF /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409CB1C1E5EEC7900D84ADF /* WeatherEntity.swift */; };
+		0409CB1F1E5EECE600D84ADF /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409CB1E1E5EECE600D84ADF /* BaseEntity.swift */; };
+		041E8D911E5D701900779454 /* RequesterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D901E5D701900779454 /* RequesterAPI.swift */; };
 		041E8D951E5D792100779454 /* Closure_sw-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 041E8D941E5D792100779454 /* Closure_sw-Bridging-Header.h */; };
 		045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0DC1E56DA640080A372 /* AppDelegate.swift */; };
 		045CE0DF1E56DA640080A372 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0DE1E56DA640080A372 /* LoginViewController.swift */; };
@@ -16,14 +18,15 @@
 		045CE0E71E56DA640080A372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045CE0E51E56DA640080A372 /* LaunchScreen.storyboard */; };
 		045CE0EF1E56DCDF0080A372 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */; };
 		04CF28071E56E89200798FFD /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF28061E56E89200798FFD /* WeatherViewController.swift */; };
-		04DCA5E21E5DB35900AFB66C /* CityWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */; };
-		04DCA5E41E5DB45600AFB66C /* TempCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E31E5DB45600AFB66C /* TempCity.swift */; };
-		04DCA5E71E5DB4FC00AFB66C /* DescriptionWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E61E5DB4FC00AFB66C /* DescriptionWeather.swift */; };
+		04DCA5E41E5DB45600AFB66C /* TempEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E31E5DB45600AFB66C /* TempEntity.swift */; };
+		04DCA5E71E5DB4FC00AFB66C /* DescriptionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCA5E61E5DB4FC00AFB66C /* DescriptionEntity.swift */; };
 		1D182C566951ACDB874CE245 /* Pods_Closure_sw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6F5FA623E68E1F481402B0 /* Pods_Closure_sw.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041E8D901E5D701900779454 /* RequestAPIWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPIWeather.swift; sourceTree = "<group>"; };
+		0409CB1C1E5EEC7900D84ADF /* WeatherEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
+		0409CB1E1E5EECE600D84ADF /* BaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
+		041E8D901E5D701900779454 /* RequesterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequesterAPI.swift; sourceTree = "<group>"; };
 		041E8D921E5D74CC00779454 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../Library/Developer/Xcode/DerivedData/Closure_sw-gqwftxjwvjgdsfbmptafdqyzvonl/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		041E8D941E5D792100779454 /* Closure_sw-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Closure_sw-Bridging-Header.h"; sourceTree = "<group>"; };
 		045CE0D91E56DA640080A372 /* Closure_sw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Closure_sw.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,9 +38,8 @@
 		045CE0E81E56DA640080A372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Closure_sw/Info.plist; sourceTree = "<group>"; };
 		045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		04CF28061E56E89200798FFD /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWeatherInfo.swift; sourceTree = "<group>"; };
-		04DCA5E31E5DB45600AFB66C /* TempCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempCity.swift; sourceTree = "<group>"; };
-		04DCA5E61E5DB4FC00AFB66C /* DescriptionWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionWeather.swift; sourceTree = "<group>"; };
+		04DCA5E31E5DB45600AFB66C /* TempEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempEntity.swift; sourceTree = "<group>"; };
+		04DCA5E61E5DB4FC00AFB66C /* DescriptionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionEntity.swift; sourceTree = "<group>"; };
 		0CE48087A385C17F1D9FE4A4 /* Pods-Closure_sw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Closure_sw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Closure_sw/Pods-Closure_sw.debug.xcconfig"; sourceTree = "<group>"; };
 		35923D5235D584EFA662F0DC /* Pods-Closure_sw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Closure_sw.release.xcconfig"; path = "Pods/Target Support Files/Pods-Closure_sw/Pods-Closure_sw.release.xcconfig"; sourceTree = "<group>"; };
 		DE6F5FA623E68E1F481402B0 /* Pods_Closure_sw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Closure_sw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,9 +91,8 @@
 				045CE0DE1E56DA640080A372 /* LoginViewController.swift */,
 				045CE0EE1E56DCDF0080A372 /* RegisterViewController.swift */,
 				04CF28061E56E89200798FFD /* WeatherViewController.swift */,
-				04DCA5E11E5DB35900AFB66C /* CityWeatherInfo.swift */,
-				041E8D901E5D701900779454 /* RequestAPIWeather.swift */,
 				04DCA5E51E5DB45900AFB66C /* WeatherEntity */,
+				041E8D901E5D701900779454 /* RequesterAPI.swift */,
 				041E8D961E5D79DC00779454 /* Application */,
 				04DCA5E01E5DB2E200AFB66C /* Source */,
 			);
@@ -113,8 +114,10 @@
 		04DCA5E51E5DB45900AFB66C /* WeatherEntity */ = {
 			isa = PBXGroup;
 			children = (
-				04DCA5E31E5DB45600AFB66C /* TempCity.swift */,
-				04DCA5E61E5DB4FC00AFB66C /* DescriptionWeather.swift */,
+				0409CB1E1E5EECE600D84ADF /* BaseEntity.swift */,
+				0409CB1C1E5EEC7900D84ADF /* WeatherEntity.swift */,
+				04DCA5E31E5DB45600AFB66C /* TempEntity.swift */,
+				04DCA5E61E5DB4FC00AFB66C /* DescriptionEntity.swift */,
 			);
 			name = WeatherEntity;
 			sourceTree = "<group>";
@@ -259,12 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DCA5E41E5DB45600AFB66C /* TempCity.swift in Sources */,
+				0409CB1F1E5EECE600D84ADF /* BaseEntity.swift in Sources */,
+				04DCA5E41E5DB45600AFB66C /* TempEntity.swift in Sources */,
 				045CE0DF1E56DA640080A372 /* LoginViewController.swift in Sources */,
 				04CF28071E56E89200798FFD /* WeatherViewController.swift in Sources */,
-				04DCA5E21E5DB35900AFB66C /* CityWeatherInfo.swift in Sources */,
-				04DCA5E71E5DB4FC00AFB66C /* DescriptionWeather.swift in Sources */,
-				041E8D911E5D701900779454 /* RequestAPIWeather.swift in Sources */,
+				04DCA5E71E5DB4FC00AFB66C /* DescriptionEntity.swift in Sources */,
+				0409CB1D1E5EEC7900D84ADF /* WeatherEntity.swift in Sources */,
+				041E8D911E5D701900779454 /* RequesterAPI.swift in Sources */,
 				045CE0EF1E56DCDF0080A372 /* RegisterViewController.swift in Sources */,
 				041E8D951E5D792100779454 /* Closure_sw-Bridging-Header.h in Sources */,
 				045CE0DD1E56DA640080A372 /* AppDelegate.swift in Sources */,

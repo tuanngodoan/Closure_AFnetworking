@@ -13,11 +13,14 @@ import AFNetworking
 class WeatherViewController: UIViewController {
     
     @IBOutlet weak var cityNameTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
     
-    //var city = "Ha Noi"
+    var weatherCity:WeatherEntity!
+    
     override func viewDidLoad() {
+        weatherCity = WeatherEntity()
         super.viewDidLoad()
-
+        
         
     }
 
@@ -27,8 +30,24 @@ class WeatherViewController: UIViewController {
     }
     
     @IBAction func searchWeatherButton(sender: AnyObject) {
-        
-        
+        getWeather(String(cityNameTextField.text))
+        updateUI()
+    }
+    
+
+    // UPDATE UI
+   func updateUI(){
+        descriptionTextField.text = weatherCity.descriptionCity.description
+    }
+    
+    // Get Weather
+    func getWeather(city: NSString){
+        RequesterAPI.sharedInstance.getWeatherWithCity(city) { (isSuccess, response, error) in
+           self.weatherCity.parse(response!)
+            DispatchQueue.main.async {
+                
+            }
+        }
     }
     
     /*
