@@ -39,9 +39,19 @@ class WeatherViewController: UIViewController {
     // Get Weather
     func getWeather(city: NSString){
         RequesterAPI.sharedInstance.getWeatherWithCity(city) { (isSuccess, response, error) in
-           self.weatherCity.parse(response!)
-            self.updateUI()
-        }
+           
+            if isSuccess {
+                dispatch_async(dispatch_get_main_queue()){
+                    self.weatherCity.parse(response!)
+                    self.updateUI()
+                }
+            }else{
+                print("error = ", error?.description)
+            }
+            
+
+        
+     }
     }
     // UPDATE UI
     func updateUI(){
@@ -51,14 +61,6 @@ class WeatherViewController: UIViewController {
         print("Temp = \(weatherCity.tempCity.temp)")
         print("Descrip = \(weatherCity.descriptionCity.description)")
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
