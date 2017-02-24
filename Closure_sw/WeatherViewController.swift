@@ -23,6 +23,9 @@ class WeatherViewController: UIViewController {
         
         
     }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,23 +34,8 @@ class WeatherViewController: UIViewController {
     
     @IBAction func searchWeatherButton(sender: AnyObject) {
         getWeather(String(cityNameTextField.text))
+        
     }
-    
-
-    // UPDATE UI
-   func updateUI(){
-    
-        descriptionTextField.text  = weatherCity.descriptionCity.description
-        print("ID = \(weatherCity.id)")
-        print("Clouds = \(weatherCity.cloudsAll)")
-        print("Temp = \(weatherCity.tempCity.temp)")
-        print("Descrip = \(weatherCity.descriptionCity.description)")
-
-
-
-    
-    }
-    
     // Get Weather
     func getWeather(city: NSString){
         RequesterAPI.sharedInstance.getWeatherWithCity(city) { (isSuccess, response, error) in
@@ -55,7 +43,14 @@ class WeatherViewController: UIViewController {
             self.updateUI()
         }
     }
-    
+    // UPDATE UI
+    func updateUI(){
+        descriptionTextField.text  = weatherCity.descriptionCity.description
+        print("ID = \(weatherCity.id)")
+        print("Clouds = \(weatherCity.cloudsAll)")
+        print("Temp = \(weatherCity.tempCity.temp)")
+        print("Descrip = \(weatherCity.descriptionCity.description)")
+    }
     /*
     // MARK: - Navigation
 

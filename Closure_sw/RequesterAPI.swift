@@ -13,12 +13,10 @@ typealias CompletionBlock = (isSuccess:Bool, response: NSDictionary?, error:NSEr
 
 class RequesterAPI {
     static let sharedInstance = RequesterAPI()
-    let manager : AFHTTPSessionManager
+    let manager : AFHTTPSessionManager!
 
     init() {
-        //
         manager = AFHTTPSessionManager()
-        
     }
     
     func getWeatherWithCity(cityName:NSString, completion: CompletionBlock){
